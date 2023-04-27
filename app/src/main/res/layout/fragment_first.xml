@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".FirstFragment">
+
+   <androidx.appcompat.widget.LinearLayoutCompat
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:gravity="center">
+      <androidx.appcompat.widget.AppCompatTextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+         android:text="Add two Number"
+          android:textSize="25sp"
+          android:textColor="@color/black"
+          android:textAlignment="center"
+          android:textStyle="bold"
+          />
+      <androidx.appcompat.widget.AppCompatEditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/num1"
+          android:hint="Enter first number"
+          />
+      <androidx.appcompat.widget.AppCompatEditText
+          android:layout_width="match_parent"
+          android:id="@+id/num2"
+          android:layout_height="wrap_content"
+          android:hint="Enter second number"
+          />
+      <com.google.android.material.button.MaterialButton
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/btn"
+         android:text="Add"/>
+
+   </androidx.appcompat.widget.LinearLayoutCompat>
+
+</FrameLayout>
